@@ -24,6 +24,7 @@ python3 question_0.py
 python3 question_1.py
 python3 question_2.py
 python3 question_3.py
+python3 question_4.py
 ```
 
 Each `question_*.py` script prints its answer on the `ANSWER:` line.
@@ -36,3 +37,4 @@ Each `question_*.py` script prints its answer on the `ANSWER:` line.
 | 1. Which column has missing values? | `horsepower` (877 missing) |
 | 2. Median of `horsepower` | 254 |
 | 3. Better way to fill missing `horsepower` | Training mean (RMSE 2.202 vs 2.205 with 0) |
+| 4. Best regularization `r` | 0 (validation RMSE 2.2053) |
