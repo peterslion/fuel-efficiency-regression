@@ -26,9 +26,16 @@ python3 question_2.py
 python3 question_3.py
 python3 question_4.py
 python3 question_5.py
+python3 question_6.py
 ```
 
 Each `question_*.py` script prints its answer on the `ANSWER:` line.
+
+## Model
+
+Questions 3–6 use the lecture normal equation. A column of ones is added for the bias, and regularization (when used) adds `r * I` to the full `XᵀX`, including the bias. RMSE is the root mean squared error.
+
+The split shuffles row indices with `np.random.seed`, then takes 60% train, 20% validation, and 20% test. The horsepower mean used for imputation is computed on the training fold only.
 
 ## Answers
 
@@ -40,3 +47,4 @@ Each `question_*.py` script prints its answer on the `ANSWER:` line.
 | 3. Better way to fill missing `horsepower` | Training mean (RMSE 2.202 vs 2.205 with 0) |
 | 4. Best regularization `r` | 0 (validation RMSE 2.2053) |
 | 5. Std of validation RMSE across seeds 0–9 | 0.029 |
+| 6. Test RMSE (seed 9, train+val, fill 0, `r=0.001`) | 2.235828 |
