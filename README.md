@@ -21,6 +21,7 @@ https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/main/c
 ```bash
 python3 -m pip install -r requirements.txt
 python3 question_0.py
+python3 question_1.py
 ```
 
 Each `question_*.py` script prints its answer on the `ANSWER:` line.
@@ -30,3 +31,4 @@ Each `question_*.py` script prints its answer on the `ANSWER:` line.
 | Question | Answer |
 | --- | --- |
 | 0. Does `fuel_efficiency_mpg` have a long tail? | No |
+| 1. Which column has missing values? | `horsepower` (877 missing) |
